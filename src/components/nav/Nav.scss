@@ -1,0 +1,108 @@
+.nav {
+  max-width: 100vw;
+  margin: 0;
+  border: 1px dotted red;
+  background-color: var(--light);
+
+  &__container {
+    max-width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px dotted blue;
+
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: repeat(2, min-content);
+
+    &--Lblock {
+      grid-row: 1 / 2;
+      grid-column: 1 / 2;
+
+      display: flex;
+      gap: 10px;
+      padding-top: 10px;
+      font-family: Jost Bold;
+      font-size: 24px;
+
+      span {
+        color: var(--alert);
+      }
+
+      &-hamburger {
+        margin-top: 2.5px;
+      }
+
+      &-close {
+        margin-top: 2.5px;
+        display: none;
+      }
+      // background-color: green;
+    }
+
+    &--Rblock {
+      grid-row: 1 / 2;
+      grid-column: 3 / 4;
+
+      display: flex;
+      gap: 20px;
+      padding-top: 10px;
+      // background-color: blue;
+    }
+
+    &--dropDownList {
+      grid-row: 2 / 3;
+      grid-column: 1 / -1;
+
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-content: center;
+      font-family: Jost Regular;
+      font-size: 16px;
+      padding-top: 15px;
+      // background-color: red;
+
+      &-chevronDown {
+        display: flex;
+        gap: 5px;
+        // background-color: pink;
+      }
+
+      img {
+        margin-top: 3.4px;
+        // background-color: yellow;
+      }
+    }
+
+    &--toggle:checked ~ &--dropDownList {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__container {
+      max-width: 90%;
+
+      display: grid;
+      grid-template-columns: min-content 1fr min-content;
+      grid-template-rows: min-content;
+      align-items: center;
+
+      &--Lblock {
+        &-hamburger {
+          display: none;
+        }
+      }
+
+      &--dropDownList {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+      }
+    }
+  }
+}
