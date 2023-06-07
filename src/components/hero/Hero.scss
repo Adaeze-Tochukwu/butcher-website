@@ -1,81 +1,231 @@
 .container {
   max-width: 100vw;
   background-color: var(--hero);
+  padding-bottom: 50px;
 }
 
 .hero {
-  max-width: 98%;
+  max-width: 98%; //98% of the container up
   margin-left: auto;
   margin-right: auto;
-  border: 1px dotted blue;
+  margin-bottom: 20px;
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 
   &__Lblock {
-    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid green;
 
     &--contain {
-      border: 1px dotted red;
-      max-width: 90%;
+      max-width: 70%; //70% of the Lblock up
+      margin-top: 60px;
       display: flex;
       flex-direction: column;
-      gap: 100px;
+      gap: 50px;
 
       &-headings {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         h1 {
           font-family: Jost ExtraBold;
-          font-size: 46px;
+          color: var(--heading);
+          font-size: 35px;
+          line-height: 105%;
         }
         h5 {
-          background-color: aqua;
-          font-family: Just Another Hand;
+          font-family: Just Another Hand; //it is a spaecial type of hand written font
+          font-size: 15px;
+          color: var(--gray);
+          letter-spacing: 5px;
         }
+        p {
+          color: var(--gray);
+          font-size: 15px;
+        }
+      }
+      button {
+        background-color: var(--small);
+        color: var(--light);
+        font-family: "Jost SemiBold";
+        padding: 15px;
+        border-radius: 25px;
+        max-width: 200px;
+        display: inline-flex;
+        gap: 10px;
       }
       &-component {
         display: flex;
         flex-direction: row;
-        gap: 10px;
+        justify-content: space-between;
+
+        @media screen and (max-width: 630px) {
+          max-width: 50%; //at 630px max-width the HeroReview component should be 50%
+          flex-direction: column;
+          gap: 40px;
+        }
+      }
+    }
+    &--review {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      &-star {
+        display: flex;
+        gap: 11.7px;
+        color: var(--review);
+      }
+      p {
+        font-family: "Jost Bold";
+        font-size: 12px;
+      }
+      &-image {
+        max-width: 60%; // the image is 60% of the HeroComponent
       }
     }
   }
 
   &__Rblock {
-    width: 50%;
-    padding-top: 10px;
-    padding-left: 20px;
-    border: 1px solid purple;
+    //I have 4 different sizes of cheese for different screen size
+    &--cheeseTabletSmall {
+      display: none;
+    }
 
-    &--cheese {
-      margin-bottom: -9px;
+    &--cheeseTablet {
+      display: none;
+    }
+
+    &--cheeseDesktop {
+      display: none;
     }
 
     &--back {
-      width: 300px;
-      height: 350px;
+      max-width: 33%; //33% width of the Rblock width
+      height: 300px;
       background-color: var(--backpic);
       border-radius: 15px;
-      margin-left: 35px;
+      margin-top: -9.5px;
+      margin-left: 3.3%; //moved 3.3% left of the Rblock width
       position: relative;
     }
 
     &--front {
-      width: 300px;
-      height: 350px;
+      width: 100%; //100% width of the --back i.e same width and height
+      height: 100%;
       background-color: var(--frontpic);
       border-radius: 15px;
       position: absolute;
-      top: 40px;
-      left: 200px;
+      top: 13%; //moved down 13% of the --back
+      left: 60%; //moved right 60% of the --back
     }
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 80%;
+    max-width: 80%; //when the min-width is 768px the max-width of the project should be 80% of the vw
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__Lblock {
+      display: flex;
+      max-width: 50%; // 50% of the 80% above
+
+      &--contain {
+        max-width: 80%; //80% of the Lblock above
+        margin-right: 55px;
+
+        @media screen and (max-width: 990px) {
+          max-width: 95%; //@990px screen the container should be 95% of the Lblock
+          margin-right: 30px; //the margin-right is reduced
+        }
+
+        @media screen and (max-width: 879px) {
+          max-width: 100%; //@ 879px the container should be same size as the Lblock above
+          margin-right: 0; //the margin-right is removed
+        }
+      }
+    }
+
+    &__Rblock {
+      width: 50%; //50% width of the 80% max-width container above
+      padding-top: 1%;
+      position: relative;
+
+      &--cheese {
+        display: none;
+      }
+
+      &--cheeseTabletSmall {
+        display: none;
+      }
+
+      &--cheeseTablet {
+        display: none;
+      }
+
+      &--cheeseDesktop {
+        display: block; //only the cheeseDesktop of H & W = 50px should show while the other cheese should disappear
+      }
+
+      @media screen and (max-width: 1050px) {
+        &--cheese {
+          display: none;
+        }
+
+        &--cheeseTabletSmall {
+          display: none;
+        }
+
+        &--cheeseTablet {
+          display: block; //only the cheeseTablet H & W=40px should show
+        }
+
+        &--cheeseDesktop {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 880px) {
+        &--cheese {
+          display: none;
+        }
+
+        &--cheeseTabletSmall {
+          display: block; //only the cheeseTabletSmall of H & W=35px should show
+        }
+
+        &--cheeseTablet {
+          display: none;
+        }
+
+        &--cheeseDesktop {
+          display: none;
+        }
+      }
+
+      &--back {
+        max-width: 65%; //65% of the Rblock
+        height: 400px;
+        background-color: var(--backpic);
+        border-radius: 15px;
+        margin-left: 9.2%;
+        margin-top: -1%; //moved 1% of the Rblock
+        position: relative;
+      }
+
+      &--front {
+        width: 100%; //same W & H with the --back
+        height: 100%;
+        background-color: var(--frontpic);
+        border-radius: 15px;
+        position: absolute;
+        top: 10%;
+        left: 55%;
+      }
+    }
   }
 }
