@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "title": "1. Choose Meat",
+    "paragraph": "Simply dummy text of the printing and typesetting industry. Lorem ",
+    "image": "images/choose-meat.svg",
+    "background": "images/Ellipse-choose.svg"
+  },
+  {
+    "id": "2",
+    "title": "2. Quick Order",
+    "paragraph": "Simply dummy text of the printing and typesetting industry. Lorem ",
+    "image": "images/order-meat.svg",
+    "background": "images/Ellipse-order.svg"
+  },
+  {
+    "id": "3",
+    "title": "3. Find Doorstep",
+    "paragraph": "Simply dummy text of the printing and typesetting industry. Lorem ",
+    "image": "images/doorstep.svg",
+    "background": "images/Ellipse-door.svg"
+  }
+]

@@ -1,9 +1,5 @@
 import React from "react";
 import "./Hero.scss";
-import Cheese from "../../assets/images/cheese.svg";
-import CheeseTablet from "../../assets/images/cheeseTablet.svg";
-import CheeseTabletSmall from "../../assets/images/cheeseTabletSmall.svg";
-import CheeseDesktop from "../../assets/images/cheeseDesktop.svg";
 import ArrowRight from "../../assets/images/arrow-right.svg";
 import Capterra from "../../assets/images/capterra.svg";
 import Food from "../../assets/images/food.svg";
