@@ -8,6 +8,7 @@ import ArrowRight from "../../assets/images/arrow-right.svg";
 import Capterra from "../../assets/images/capterra.svg";
 import Food from "../../assets/images/food.svg";
 import HeroReview from "./HeroReview";
+import MeatBig from "../../assets/images/MeatBig.svg";
 
 export default function Hero() {
   return (
@@ -33,25 +34,7 @@ export default function Hero() {
           </div>
         </div>
         <div className="hero__Rblock">
-          <img src={Cheese} alt="" className="hero__Rblock--cheese" />
-          <img
-            src={CheeseTablet}
-            alt=""
-            className="hero__Rblock--cheeseTablet"
-          />
-          <img
-            src={CheeseTabletSmall}
-            alt=""
-            className="hero__Rblock--cheeseTabletSmall"
-          />
-          <img
-            src={CheeseDesktop}
-            alt=""
-            className="hero__Rblock--cheeseDesktop"
-          />
-          <div className="hero__Rblock--back">
-            <div className="hero__Rblock--front"></div>
-          </div>
+          <img src={MeatBig} alt="" />
         </div>
       </div>
     </div>

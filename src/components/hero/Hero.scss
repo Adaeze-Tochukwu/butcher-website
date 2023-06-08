@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
 
   &__Lblock {
     display: flex;
@@ -20,7 +21,7 @@
     align-items: center;
 
     &--contain {
-      max-width: 70%; //70% of the Lblock up
+      max-width: 90%; //70% of the Lblock up
       margin-top: 60px;
       display: flex;
       flex-direction: column;
@@ -60,13 +61,7 @@
       &-component {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-
-        @media screen and (max-width: 630px) {
-          max-width: 50%; //at 630px max-width the HeroReview component should be 50%
-          flex-direction: column;
-          gap: 40px;
-        }
+        gap: 10%;
       }
     }
     &--review {
@@ -90,37 +85,12 @@
   }
 
   &__Rblock {
-    //I have 4 different sizes of cheese for different screen size
-    &--cheeseTabletSmall {
-      display: none;
-    }
+    padding-top: 50px;
+    text-align: center;
 
-    &--cheeseTablet {
-      display: none;
-    }
-
-    &--cheeseDesktop {
-      display: none;
-    }
-
-    &--back {
-      max-width: 33%; //33% width of the Rblock width
-      height: 300px;
-      background-color: var(--backpic);
-      border-radius: 15px;
-      margin-top: -9.5px;
-      margin-left: 3.3%; //moved 3.3% left of the Rblock width
-      position: relative;
-    }
-
-    &--front {
-      width: 100%; //100% width of the --back i.e same width and height
-      height: 100%;
-      background-color: var(--frontpic);
-      border-radius: 15px;
-      position: absolute;
-      top: 13%; //moved down 13% of the --back
-      left: 60%; //moved right 60% of the --back
+    img {
+      max-width: 70%;
+      height: auto;
     }
   }
 
@@ -147,84 +117,6 @@
           max-width: 100%; //@ 879px the container should be same size as the Lblock above
           margin-right: 0; //the margin-right is removed
         }
-      }
-    }
-
-    &__Rblock {
-      width: 50%; //50% width of the 80% max-width container above
-      padding-top: 1%;
-      position: relative;
-
-      &--cheese {
-        display: none;
-      }
-
-      &--cheeseTabletSmall {
-        display: none;
-      }
-
-      &--cheeseTablet {
-        display: none;
-      }
-
-      &--cheeseDesktop {
-        display: block; //only the cheeseDesktop of H & W = 50px should show while the other cheese should disappear
-      }
-
-      @media screen and (max-width: 1050px) {
-        &--cheese {
-          display: none;
-        }
-
-        &--cheeseTabletSmall {
-          display: none;
-        }
-
-        &--cheeseTablet {
-          display: block; //only the cheeseTablet H & W=40px should show
-        }
-
-        &--cheeseDesktop {
-          display: none;
-        }
-      }
-
-      @media screen and (max-width: 880px) {
-        &--cheese {
-          display: none;
-        }
-
-        &--cheeseTabletSmall {
-          display: block; //only the cheeseTabletSmall of H & W=35px should show
-        }
-
-        &--cheeseTablet {
-          display: none;
-        }
-
-        &--cheeseDesktop {
-          display: none;
-        }
-      }
-
-      &--back {
-        max-width: 65%; //65% of the Rblock
-        height: 400px;
-        background-color: var(--backpic);
-        border-radius: 15px;
-        margin-left: 9.2%;
-        margin-top: -1%; //moved 1% of the Rblock
-        position: relative;
-      }
-
-      &--front {
-        width: 100%; //same W & H with the --back
-        height: 100%;
-        background-color: var(--frontpic);
-        border-radius: 15px;
-        position: absolute;
-        top: 10%;
-        left: 55%;
       }
     }
   }
