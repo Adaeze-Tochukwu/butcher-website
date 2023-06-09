@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Process.scss";
 import data from "./Process.json";
+import Heading from "../heading/Heading";
 
 export default function Process() {
   const [processes, setProcesses] = useState([]);
@@ -12,9 +13,11 @@ export default function Process() {
   return (
     <div className="containerP">
       <div className="process">
-        <h5>PROCESS</h5>
-        <h2>Our Quick Process</h2>
-        <p>Simply dummy text of the printing and typesetting industry.</p>
+        <Heading
+          header1="PROCESS"
+          header2="Our Quick Process"
+          para="Simply dummy text of the printing and typesetting industry."
+        />
         <ul>
           {processes.map((process) => (
             <li key={process.id}>
