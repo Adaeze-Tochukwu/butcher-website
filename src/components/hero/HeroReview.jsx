@@ -1,6 +1,5 @@
 import React from "react";
 import "./Hero.scss";
-import StarFilled from "../../assets/images/star-filled.svg";
 import Stars from "../star/Star"
 
 export default function HeroReview(props) {
