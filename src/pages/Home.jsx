@@ -7,7 +7,7 @@ import History from "../components/history/History";
 import Testimonial from "../components/testimonial/Testimonial";
 import Products from "../components/products/Products";
 import Category from "../components/category/Category";
-import Heading from "../components/heading/Heading";
+import Question from "../components/question/question";
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
       <Testimonial />
       <Products />
       <Category />
-      <Heading />
+      <Question />
     </div>
   );
 }
