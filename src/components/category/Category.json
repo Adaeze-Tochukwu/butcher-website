@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "image": "/images/beef.svg",
+    "caption": "Beef"
+  },
+  {
+    "id": "2",
+    "image": "/images/chicken.svg",
+    "caption": "Chicken"
+  },
+  {
+    "id": "3",
+    "image": "/images/lamb.svg",
+    "caption": "Lamb"
+  }
+]

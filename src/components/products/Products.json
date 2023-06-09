@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "image": "/images/beef1.svg",
+    "nutritions": "BEEF FOR NUTRITIONS",
+    "size": "Beef 1 Kg Pack",
+    "meaning": "Flowbase is the largest webflow resource site, with. Flowbase is the "
+  },
+  {
+    "id": "2",
+    "image": "/images/beef2.svg",
+    "nutritions": "BEEF FOR NUTRITIONS",
+    "size": "Beef 1 Kg Pack",
+    "meaning": "Flowbase is the largest webflow resource site, with. Flowbase is the "
+  },
+  {
+    "id": "3",
+    "image": "/images/beef3.svg",
+    "nutritions": "BEEF FOR NUTRITIONS",
+    "size": "Beef 1 Kg Pack",
+    "meaning": "Flowbase is the largest webflow resource site, with. Flowbase is the "
+  },
+  {
+    "id": "4",
+    "image": "/images/beef4.svg",
+    "nutritions": "BEEF FOR NUTRITIONS",
+    "size": "Beef 1 Kg Pack",
+    "meaning": "Flowbase is the largest webflow resource site, with. Flowbase is the "
+  }
+]
