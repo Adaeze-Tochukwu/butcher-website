@@ -4,6 +4,8 @@ import Hero from "../components/hero/Hero";
 import Partners from "../components/partners/Partners";
 import Process from "../components/process/Process";
 import History from "../components/history/History";
+import Testimonial from "../components/testimonial/Testimonial";
+// import Star from '../components/star/Star';
 
 export default function Home() {
   return (
@@ -13,6 +15,8 @@ export default function Home() {
       <Partners />
       <Process />
       <History />
+      <Testimonial />
+      {/* <Star /> */}
     </div>
   );
 }
