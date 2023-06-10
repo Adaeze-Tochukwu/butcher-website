@@ -4,7 +4,7 @@ import Heading from "../heading/Heading";
 
 export default function Question() {
   return (
-    <div>
+    <div className='question'>
       <Heading
         header1="FAQ"
         header2="Have any question in mind?"
