@@ -2,12 +2,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
   
   h5 {
     font-family: Just Another Hand;
     font-size: 18px;
     letter-spacing: 3px;
     color: var(--process);
+   
   }
 
   h2 {
