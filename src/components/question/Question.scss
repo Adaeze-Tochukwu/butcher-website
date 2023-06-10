@@ -1,10 +1,55 @@
+.containerQ {
+  max-width: 100%;
+  background-image: url(images/cheese.svg), url(images/background-cheese.svg),
+    url(images/background-bone.svg);
+  background-repeat: no-repeat;
+  background-position: top left, center left, bottom right;
+}
+
 .question {
-  max-width: 90%;
   margin-top: 100px;
+  max-width: 65%;
   margin-left: auto;
   margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+
+  &__faq {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &--first {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      border: 1px solid var(--history);
+      border-radius: 5px;
+      padding: 15px;
+
+      &-chevron {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    &--second {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      &-chevron {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border: 1px solid var(--history);
+        border-radius: 5px;
+        padding: 15px;
+      }
+    }
+  }
 
   @media screen and (min-width: 900px) {
-    max-width: 80%;
+    max-width: 50%;
   }
 }
