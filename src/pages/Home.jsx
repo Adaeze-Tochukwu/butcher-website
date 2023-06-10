@@ -8,6 +8,7 @@ import Testimonial from "../components/testimonial/Testimonial";
 import Products from "../components/products/Products";
 import Category from "../components/category/Category";
 import Question from "../components/question/question";
+import Footer from "../components/footer/Footer";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
       <Products />
       <Category />
       <Question />
+      <Footer />
     </div>
   );
 }
