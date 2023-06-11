@@ -2,7 +2,7 @@
   max-width: 100vw;
   background-image: url(images/cheese.svg), url(images/cheese2.svg);
   background-repeat: no-repeat;
-  background-position: center left, center right;
+  background-position: 0% 90%, 100% 30%; // I used %age to position the background images
 }
 
 .process {

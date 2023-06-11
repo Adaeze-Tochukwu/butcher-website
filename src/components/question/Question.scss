@@ -3,7 +3,7 @@
   background-image: url(images/cheese.svg), url(images/background-cheese.svg),
     url(images/background-bone.svg);
   background-repeat: no-repeat;
-  background-position: top left, center left, bottom right;
+  background-position: 10% 13%, 0% 75%, bottom right;   //used %age and position bottom right for the background position
 }
 
 .question {
